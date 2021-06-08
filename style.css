@@ -26,9 +26,38 @@ body{
   left: 17px;
   font-size: 17px;
   color: white;
-  text-decoration: none;
-  border-bottom: solid 1px #6AEDC8;
-
-
+  text-decoration: none;  /*通常のアンダーラインを消す*/
+  
 }
 
+.link a::after{
+  content: '';
+	display: block;
+	position: absolute;
+	left: 50%; /* 位置調整 */
+	transform: translate(-50%); /* 位置調整 */
+	bottom: -3px; /* 下線の上下位置調整 */
+	width: 70%; /* 下線の幅 */
+	height: 3px; /* 下線の太さ */
+	background-color: #6AEDC8; /* 下線の色 */
+}
+
+.enimg {
+  background-image: url("img/fatman@2.png");
+  background-repeat: no-repeat;
+  background-size: 439px;
+  background-position: center;
+  position: relative;
+  top: 200px;
+  left: 320px;
+  display: inline-block;
+  width: 483px;
+  height: 483px;
+
+  border-radius: 50%;
+  border: solid 2px white;
+}
+
+.enimg img {
+  /* width: 439px; */
+}
