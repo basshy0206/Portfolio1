@@ -170,10 +170,10 @@ body{
 .box-projects::before{
   content: "";
   position: absolute;
-  top: -120px;
+  top: -118px;
   left: 0;
   background-color: white;
-  height: 250px;
+  height: 235px;
   width: 100%;
   transform: skewY(173deg);
 }
@@ -641,6 +641,17 @@ body{
     text-decoration: none;
     color: white;
     letter-spacing: 0.08em;
+  }
+
+  .box-projects::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    background-color: white;
+    height: 175px;
+    width: 100%;
+    transform: skewY(173deg);}
   }
 
   .box-projects::after {
