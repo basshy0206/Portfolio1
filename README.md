@@ -1,7 +1,7 @@
 Portfolio Sample1
 ====
 
-プロジェクトの概要説明
+ポートフォリオ１のサンプルです。
 
 ## デモ
 [Wwbサイトをみる](https://techis-jp-portfolio1-sample.herokuapp.com/)
