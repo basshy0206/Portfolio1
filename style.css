@@ -106,12 +106,22 @@ body{
   text-align: center;
 }
 
+.title-1 {
+  margin-top: 0%;
+  font-size: 60px;
+  color: #4D4C4C;
+  text-align: center;
+}
+
 .icon-ber {
   display: inline-block;
+  margin-top: 0%;
   font-size: 60px;
   color: #707070;
   font-weight: bolder;
 }
+
+
 
 
 .icon-ber img {
@@ -147,25 +157,55 @@ body{
 }
 
 .box-projects {
-  margin: 0 auto;
-  max-width: 1920px;
+  /* margin: 0 auto; */
+  /* max-width: 1920px; */
   /* margin-top: 100px; */
+  position: relative;
   width: 100%;
-  height: 1816px;
+  height: 1850px;
   text-align: center;
   background-color: #53BD9D;
 }
 
-.sankaku-1 {
-  height:0;
-  width:0;
-  border-top:200px solid white;
-  border-left:0px solid transparent;
-  border-right:1920px solid transparent;
+.box-projects::before{
+  content: "";
+  position: absolute;
+  top: -120px;
+  left: 0;
+  background-color: white;
+  height: 250px;
+  width: 100%;
+  transform: skewY(173deg);
 }
 
+.box-projects::after{
+  content: "";
+  position: absolute;
+  top: 1724px;
+  left: 0;
+  background-color: white;
+  height: 250px;
+  width: 100%;
+  transform: skewY(
+-173deg
+);
+}
+
+.sankaku-1{
+  position: relative;
+  top: 200px;
+} 
+
+.title-2 {
+  position: relative;
+  top: 10px;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
 
 .icon-ber2 {
+  margin-top: 0%;
   display: inline-block;
   font-size: 60px;
   font-weight: bolder;
@@ -191,6 +231,7 @@ body{
   width: 100%;
   max-width: 545px;
   float: left;
+  margin-top: 5%;
   margin-left: 10%;
   margin-right: 16%;
 }
@@ -236,23 +277,29 @@ body{
   color: white;
 }
 
-.sankaku-2 {
-  position: relative;
-  top: 1233px;
-  height:0;
-  width:0;
-  border-bottom:200px solid white;
-  border-left:0px solid transparent;
-  border-right:1920px solid transparent;
-}
+
 
 .box-contact {
   margin: 0 auto;
   max-width: 1920px;
   text-align: center;
-  margin: 0 auto;
+  margin: 125px auto;
   padding: 0 ;
   width: 100%;
+}
+
+.icon-ber3 {
+  display: inline-block;
+  margin-top: 0%;
+  font-size: 60px;
+  color: #5D5C5C;
+  font-weight: bolder;
+}
+
+.icon-ber3 img {
+  position: relative;
+  margin: 0 40px;
+  top: 21px;
 }
 
 .contact-list {
@@ -348,6 +395,7 @@ body{
   text-align: center;
   line-height: 130px;
   font-size: 17px;
+  color: #938F8F;
   margin: 50px 0 20px;
 
 }
@@ -357,6 +405,7 @@ body{
 @media screen and (max-width:767px) {
   body {
     min-width: 100%;
+    max-height: 3979px;
   }
 
 
@@ -411,6 +460,10 @@ body{
     text-align: center;
   }
 
+  .profile p {
+    font-size: 20px;
+  }
+
   .ud-line {
     font-size: 30px;
   }
@@ -427,38 +480,107 @@ body{
     background-color: #6AEDC8; /* 下線の色 */
   }
 
+  .box-about {
+    width: 100%;
+    margin-top: 100px;
+    height: 460px;
+    text-align: center;
+}
+
+  .title-1 {
+    margin-top: 0%;
+    font-size: 30px;
+    color: #4D4C4C;
+    text-align: center;
+  }
+
   .icon-ber {
     display: inline-block;
-    font-size: 30px;
+    margin-top: 5%;
+    font-size: 20px;
     color: #707070;
     font-weight: bolder;
-}
+  }
 
   .icon-ber img {
     position: relative;
-    margin: 0 40px;
-    top: 5px;
+    margin: 0 10px;
+    top: 6px;
     width: 25px;
-}
+  }
 
-  .profile p {
+  .Lun-size {
+    margin-top: 40px;
+    max-width: 364px;
+    font-size: 11px;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  .my-history {
+    margin: 5px auto;
+    max-width: 290px;
+    font-size: 11px;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  .icon-list {
+    width: 100%;
+    max-width: 247px;
+    margin: 22px auto 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-2 {
+    position: relative;
+    top: 0px;
     font-size: 20px;
+    color: white;
+    text-align: center;
   }
 
-  .sankaku-1 {
-    height:0;
-    width:0;
-    margin-top: 20px;
-    border-top:100px solid white;
-    border-left:0px solid transparent;
-    border-right:375px solid transparent;
+  .box-projects {
+    /* margin: 0 auto; */
+    /* max-width: 1920px; */
+    /* margin-top: 100px; */
+    position: relative;
+    width: 100%;
+    height: 1700px;
+    text-align: center;
+    background-color: #53BD9D;
   }
+
+
+
+  .icon-ber2 {
+    margin-top: 5%;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+  }
+
+  .icon-ber2 img {
+    position: relative;
+    margin: 0 10px;
+    top: 5px;
+    width: 17px;
+  }
+
+
+
+
 
   .work-list li {
     margin: 0 auto;
     display: block;
     width: 100%;
     float: left;
+    text-align: center;
     /* margin-left: 10%; */
     /* margin-right: 16%; */
   }
@@ -468,34 +590,153 @@ body{
     max-width: 292px;
   }
 
-  .sankaku-2 {
-    position: relative;
-    top: 1233px;
-    height:0;
-    width:0;
-    border-bottom:200px solid white;
-    border-left:0px solid transparent;
-    border-right:375px solid transparent;
-  }
+
 
   .size35-white {
     margin: 0 auto;
     color: white;
-    font-size: 35px;
+    font-size: 22px;
   }
+
+  .size22-white {
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 6%;
+  }
+
+  .size28-white {
+    margin: 0 ;
+    margin-left: -49%;
+    color: white;
+    font-size: 15px;
+  }
+
+
+  .box-test {
+    text-align: left;
+    margin-left: 6%;
+  }
+
+  .box-test2 {
+    width: 375px;
+    text-align: left;
+    margin-left: 0%;
+  }
+
+  .link-site {
+    margin: 30px auto 60px;
+}
+
+
+
+
+.link-site a {
+    /* background-color: rgb(226, 226, 226); */
+    border: solid 2px white;
+    width: 76px;
+    margin-right: 20px;
+    padding: 7px;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.08em;
+  }
+
+  .box-projects::after {
+    content: "";
+    position: absolute;
+    top: 1549px;
+    left: 0;
+    background-color: white;
+    height: 200px;
+    width: 100%;
+    transform: skewY( -173deg);
+  }
+
+  .icon-ber3 {
+    display: inline-block;
+    margin-top: 5%;
+    font-size: 20px;
+    color: #707070;
+    font-weight: bolder;
+  }
+
+  .icon-ber3 img {
+    position: relative;
+    margin: 0 10px;
+    top: 6px;
+    width: 25px;
+  }
+
+  .box-contact {
+    margin: 0 auto;
+    max-width: 1920px;
+    text-align: center;
+    margin: 15% auto;
+    padding: 0;
+    width: 100%;
+  }
+
+
 
   .contact-list li {
     display: block;
+    /* text-align: center; */
     width: 100%;
-    max-width: 520px;
-    float: left;
-    margin-top: 10%;
-    margin-left: 0%;
-    margin-right: 0%;
-  
+    max-width: 261px;
+    max-height: 172px;
+    /* float: left; */
+    margin-top: 24%;
+    margin-left: 15%;
+    /* margin-right: 0%; */
   }
 
+  .phone {
+    background-color: #DEDADA;
+    width: 519px;
+    height: 343px;
+    font-size: 35px;
+    border-top: solid 5px #53BD9D;
+}
 
+  .phone p {
+    font-size: 14px;
+    margin-top: -10px;
+  }
+
+  .mail p {
+    font-size: 14px;
+    margin-top: -10px;
+  }
+
+  .contact-list img {
+    width: 31px;
+  }
+
+  .ud-line2::after {
+    content: '';
+    position: relative;
+    bottom: 26px;
+    display: inline-block;
+    width: 58px;
+    height: 1px;
+    transform: translateX(0%);
+    background-color: #707070;
+    border-radius: 2px;
+}
+
+.box-footer p {
+  position: relative;
+  top: 100px;
+  height: 74px;
+  background-color: #F5F4F4;
+  clear: both;
+  text-align: center;
+  line-height: 80px;
+  font-size: 17px;
+  margin: 50px 0 20px;
+  }
 
 
 
